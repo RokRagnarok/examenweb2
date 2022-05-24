@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+//import Home from './Home/Home';
+import Header from './shared/layout/Header';
 import './App.css';
-
+import Footer from './shared/layout/Footer';
+import Content from './shared/layout/Content';
+//import Todo from './Todo/Todo';
+//import Timer from './Pomodoro/Timer';
+//import Crypto from './Crypto/Crypto';
+//import Charthome from '../Chart/Charthome';
+//import Animation from './Animating/Animation';
+//import Anim from '../Anim/Anim';
+//import Numbers from './PureComponents/Numbers'
+//import Calculator from '../Calculator/Calculator';
+import Timer from './Examen/Timer';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header title="Header" url="https://github.com/"/>
+      <Content >
+        <Timer/>
+      </Content>
+      <Footer />
     </div>
   );
 }
